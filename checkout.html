@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>AB Project:Checkout</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+<script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+ 
+<body>
+      <style>
+    
+            #ab , #continue{
+                display: none;
+            }  
+    </style>
+        
+         <a class="logo" href="home.html"><img src="images/ABLogo.jpg" alt="Logo"></a>
+         <!--<h1>AD Group Project</h1>-->
+  
+    <nav>
+        <ul>l
+        <li><a>Hello <span id="usr"> </span></a></li>
+        <li class="nav"><a href="main.html" id="">LogOut</a></li>
+
+    </ul>
+
+    </nav>
+        
+        <br><br>
+        
+    <div class="dateAlign">
+        
+  <h2 color="color">Final Summary</h2>
+        
+        <label>Deliver To</label><br><textarea id="add" disabled style="height: 70px"></textarea>
+       
+        <br>
+        
+         <button type="button" id="ab">Summ</button>
+        <button type="button" id="finalSum">Final Summ</button>
+        <table border="1px">
+       
+
+            
+        </table>
+<!--        <div id="cartItems"></div>-->
+        <button id="continue" class="btnMain"></button>
+        <button id="payment" type="button" class="btnMain">Let's Pay</button> 
+        
+    </div>
+     <script>       
+         if(localStorage.getItem("address")!=null){
+             document.getElementById("add").value=localStorage.getItem("address").replace(',','\n').replace(',','\n').replace(',','\n');    
+         } 
+         
+            document.getElementById("payment").onclick=function(){
+                if(localStorage.getItem("address")==null) {
+             alert("Enter Address To deliver");
+                    location.href = "addAddress.html";
+}
+         else
+         {
+             document.getElementById("add").value=localStorage.getItem("address").replace(',','\n').replace(',','\n').replace(',','\n');
+              location.href = "payment.html";
+         }
+               
+            };
+        </script>
+        <script type="text/javascript" src="js/checkout.js"></script>
+        
+</body>
+    
+     <footer>
+      <p>&copy; 2020 AB Javascript Final Project</p>
+      <p>Anshul Baweja: &nbsp;<a href="mailto:abaweja8411@conestogac.on.ca">info@abaweja8411@conestogac.on.ca</a></p>
+     </footer>
+    
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>AB Project: Order Created</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+
+    <script type="text/javascript" >
+   function preventBack(){window.history.forward();}
+    setTimeout("preventBack()", 0);
+    window.onunload=function(){null};
+</script>
+</head>
+ 
+<body>
+        
+         <a class="logo" href="home.html"><img src="images/ABLogo.jpg" alt="Logo"></a>
+    
+<nav>
+        <ul>
+        <li><a>Hello <span id="usr"> </span></a></li>
+        <li class="nav"><a href="main.html" id="">LogOut</a></li>
+         
+    </ul>
+
+    </nav>
+
+<h2>Order Number <span id="order"></span> has been successfully created</h2>
+
+
+
+<h3> Order confirmation has been sent to <span id="mail"></span> </h3>
+
+<button type="button" id="create"> Create New Order </button>
+<button type="button" id="out"> Log Out </button>
+    
+    <footer>
+      <p>&copy; 2020 AB Javascript Final Project</p>
+      <p>Anshul Baweja: &nbsp;<a href="mailto:abaweja8411@conestogac.on.ca">info@abaweja8411@conestogac.on.ca</a></p>
+    </footer>
+      <script type="text/javascript" src="js/order.js"></script>
+    </body>
+</html>

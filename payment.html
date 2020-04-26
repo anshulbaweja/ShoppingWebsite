@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>AB Project :: Payment</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    
+    
+    <script type="text/javascript" >
+   function preventBack(){window.history.forward();}
+    setTimeout("preventBack()", 0);
+    window.onunload=function(){null};
+</script>
+<!--    <script src="js/calculator.js"></script>-->
+</head>
+<body>
+
+<div class="row">
+  <div class="col-75">
+    <div class="container">
+      <form action="">
+      
+        <div class="row">
+          
+
+          <div class="col-50">
+            <h3>Payment</h3>
+            <div class="icon-container">
+              <i class="fa fa-cc-visa" style="color:navy;"></i>
+              <i class="fa fa-cc-amex" style="color:blue;"></i>
+              <i class="fa fa-cc-mastercard" style="color:red;"></i>
+              <i class="fa fa-cc-discover" style="color:orange;"></i>
+            </div>
+            <label for="cname">Name on Card*</label>
+            <input type="text" class="pay" id="cname" name="cardname" required placeholder="Card Holder Name">
+            <label for="ccnum">Card number*</label>
+            <input type="text" class="pay"  id="ccnum" name="cardnumber" required placeholder="Enter 16 digit card number">
+            <label for="expmonth">Exp Month*</label>
+            <input type="text" class="pay" id="expmonth" name="expmonth" required placeholder="Enter month">
+            <div class="row">
+              <div class="col-50">
+                <label for="expyear">Exp Year*</label>
+                <input type="text" class="pay" id="expyear" name="expyear" required placeholder="Enter year">
+              </div>
+              <div class="col-50">
+                <label for="cvv">CVV*</label>
+                <input type="text" class="pay" id="cvv" name="cvv" required placeholder="3 digit number at the back of card">
+              </div>
+                 <div class="col-50">
+                <label for="amount">Amount</label>
+                <input type="text" class="pay" id="amt" disabled name="amt">
+              </div>
+                
+            </div>
+          </div>
+          
+        </div>
+       
+      </form>
+        <button type="button" id="pay" value="PAY NOW" class="btn">PAY NOW</button>
+    </div>
+  </div>
+  
+</div>
+
+     <script type="text/javascript" src="js/pay.js"></script>
+   
+    
+</body>
+    
+</html>
+    
+    
+    

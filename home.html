@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>AB Project :: Home</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+<!--    <script src="js/calculator.js"></script>-->
+</head>
+    
+<body>
+    
+    <a class="logo" href="main.html"><img src="images/AB.jpg" alt="Logo"></a>
+    <!--<h1>AD Group Project</h1>-->
+    <header>
+        <h1 style="float: left">
+            Welcome To ABShopping Mart
+        </h1>
+        <div id="cTime"></div>
+    </header>
+    
+    <nav>
+    <ul>
+        <li><a>Hello <span id="usr"> </span></a></li>
+        <li class="nav"><a href="main.html" id="">LogOut</a></li>
+        <li class="nav"><a href="summary.html" onclick="checkCart();return false;">Cart <span id="cart"></span></a></li>
+         <li class="nav"><a href="checkout.html" id="summary">Checkout</a></li>
+         
+    </ul>
+    </nav>
+    
+    <br>
+    <br>
+       
+    <main>
+        <h2>My APPLE HuB</h2>
+
+        
+<!--
+        <script>
+            //added date and highlighted user name
+        var x=localStorage.getItem("ffname");
+        document.getElementById("usr").innerHTML=x;
+        var d= new Date();
+        const monthNames = ["January", "February", "March", "April", "May", "June",
+                            "July", "August", "September", "October", "November", "December"
+];
+        document.getElementById("cTime").innerHTML=monthNames[d.getMonth()]+ " "+d.getDate()+" "+d.getFullYear();
+        </script>
+-->
+        
+        <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for your product.." title="Type in a name">
+         
+            <ul id="myUL" style="list-style-type: none">
+          <li><a href="#"></a>
+               <img src="images/apple.jpg" style="width:100%">
+            </li>
+  
+        <div class="row1">
+            
+             <li>
+
+          <div class="column1">
+         <img src="./images/iPhone.jpg" alt="iPhone" style="width:100%">
+            <br><br>
+                
+             <a href="#"> <h1 class="color">iPhone</h1></a>
+                <button type="button" id="iPhone" class="btn" value="0" >Add To Cart</button>
+                <button type="button" id="iPhone" class="btn" value="0" >1500$</button>        
+                 
+          </div>
+             </li>   
+
+             <li>
+                <div class="column1">
+         <img src="images/iPad.jpg" alt="iPad" style="width:100%">
+            <br><br>
+                
+              <a href="#"> <h1 class="color">iPad</h1></a>
+                <button type="button" id="tablet" class="btn" value="0" >Add To Cart</button>
+                <button type="button" id="iPhone" class="btn" value="0" >2500$</button>
+                         
+          </div>
+                   </li>
+
+            <li>
+                <div class="column1">
+         <img src="images/macbook.jpg" alt="macbook" style="width:100%">
+            <br><br>
+                
+             <a href="#"> <h1 class="color">Macbook</h1></a>
+                <button type="button" id="mac" class="btn" value="0" >Add To Cart</button>
+                <button type="button" id="iPhone" class="btn" value="0" >5000$</button>          
+          </div>
+                </li>
+
+            <li>
+                <div class="column1">
+         <img src="images/airpods.jpg" alt="airPods" style="width:100%">
+            <br><br>
+                
+             <a href="#"> <h1 class="color">Air Pods</h1></a>
+                <button type="button" id="air" class="btn" value="0" >Add To Cart</button>
+                <button type="button" id="iPhone" class="btn" value="0" >320$</button>
+                 
+          </div>
+                 </li>
+
+             <li>
+                <div class="column1">
+         <img src="images/macbook.jpg" alt="airPods" style="width:100%">
+            <br><br>
+                
+             <a href="#"> <h1 class="color">Apple Watch</h1></a>
+                <button type="button" id="watch" class="btn" value="0" >Add To Cart</button>
+                <button type="button" id="iPhone" class="btn" value="0" >800$</button>
+                 
+          </div>
+                  </li>     
+            
+        </div>
+                  </ul>
+    </main>
+  <script src="js/cart.js"></script>
+    
+</body>
+    
+     <footer>
+      <p>&copy; 2020 AB Javascript Final Project</p>
+      <p>Anshul Baweja: &nbsp;<a href="mailto:abaweja8411@conestogac.on.ca">info@abaweja8411@conestogac.on.ca</a></p>
+     </footer>
+    
+</html>

@@ -1,0 +1,438 @@
+* {
+  box-sizing: border-box;
+}
+
+#grad1 {
+          background-image: linear-gradient(to bottom right, lightgrey, white, dimgrey, darkslategray, darkgrey, black);
+          height: 1000px;
+}
+
+#logo {
+        margin-left: auto;
+        margin-right: auto;
+        height: 400px;
+        width: 400px;
+        display: block;
+        margin-top: auto;
+}
+#logo img{
+    color: black;   
+}
+
+.btnMain {
+              background-color: black;
+              border: none;
+              color: white;
+              padding: 15px 32px;
+              text-align: center;
+              text-decoration: none;
+              display: block;
+              font-size: 16px;
+              cursor: pointer;
+              font-weight: bold;
+              margin-right: auto;
+              margin-left: auto;
+              height: 60px;
+              width: 140px;
+             
+}
+
+.btnMain:hover {
+                    background-color: dimgrey;
+                    color: black;
+                    font-weight: bold;
+}
+
+.logo {
+        float: left;
+        margin-right: 1em;
+}
+
+.logo img {
+            max-width: 72px;
+            margin-right: -16px;
+}
+
+nav ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #333;
+}
+
+nav li {
+     float: left;
+}
+
+nav li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+}
+
+nav li a:hover {
+             background-color: #111;
+}
+
+/*
+nav li {
+         border-right: 1px solid white;
+}
+*/
+
+nav li:last-child {
+                    border-right: none;
+}
+
+.nav {
+        float: right;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.row1 {
+       display: flex;
+}
+
+ li .column1 {
+          flex: 20%;
+          padding: 5px;
+}
+
+.x a {
+             text-decoration: none;
+}
+ tr{
+    text-align: center;
+}
+
+footer {
+            padding: .5em;
+            margin-top: 1em;
+            text-align: center;
+            background-color: #333;
+            color: white;
+            font-size: 0.9em;
+}
+
+footer a {
+            color: white;
+}
+
+.form {
+           margin-left: auto;
+           margin-right: auto;
+           display: block;
+           color: darkslategray;
+           font-weight: bold;
+}
+
+input {   
+        display: block;
+        margin-bottom: 1em;
+}
+
+.color {
+            color: darkslategray;
+            /*font-size: 2em;*/
+            text-align: center;
+            text-decoration: none;
+}
+
+.color1 {
+            text-align: center;
+            font-size: 1.2em;
+            color: darkslategray;
+            text-decoration: none;
+}
+
+.color2 {
+            color: black;
+            font-size: 2em;
+            text-align: center;
+            font-weight: bold;
+}
+
+.done {
+         background: #51DF70 !important;
+         color: #00891E;
+         width: 100px;
+}
+
+.delete {
+	      display: none;
+}
+
+ol> li > button {
+                font-weight: normal;
+                background: none;
+                border: none;
+                float: right;
+                color: #025f70;
+                font-weight: 800;
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+    padding: 0px;
+            width: 100%;
+            height: 100%;
+            background: transparent;
+            border: none;
+            font-size: 100%;
+    margin-top: 0px;
+            
+}
+
+#view {
+        display: none;
+}
+
+#lists, #check {
+                  padding: 5px;
+                  text-align: center;
+                  background-color: #e5eecc;
+                  border: solid 1px #c3c3c3;
+                  margin-left: auto;
+                  margin-right: auto;
+                  display: block;
+}
+
+#lists {
+          padding: 10px;
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+}
+
+#lists ul {
+            text-align: center;
+            margin-left: auto;
+            margin-right: auto;
+            display: block;
+}
+
+#movePhone {
+             margin-left: auto;
+             margin-right: auto;
+             color: black;
+             font-weight: bold;
+             text-align: center;
+
+             
+}
+
+#phoneBook {
+             display: block;
+             margin-left: auto;
+             margin-right: auto;
+             font-weight: bold;
+             text-align: center;
+}
+
+.dateAlign {
+             text-align: center;
+             margin-left: auto;
+             margin-right: auto;
+             border: 2px solid black;
+             padding: 10px;
+             border-radius: 20px;
+             margin-left: 150px;
+             margin-right: 150px;
+}
+
+.dateAlign input {
+                     margin-left: auto;
+                     margin-right: auto;
+}
+header{
+    overflow: auto;
+}
+#cTime{
+    float: right;
+        
+}
+
+/*.indexDate {
+                margin-left: auto;
+                margin-right: auto;
+                text-align: center;
+}
+
+.indexDate input {
+                     margin-left: auto;
+                     margin-right: auto;
+                     margin: inherit;
+}*/
+
+.indexUl ul {
+                 margin-right: auto;
+                 margin-left: auto;
+                 display: block;
+}
+
+#calculator {
+                display: block;
+                margin-left: 260px;
+                margin-right: 100px;
+}
+
+#calculator > div {
+                      padding: 5px;
+                      margin: 5px;
+                      border: 1px solid;
+                      background: #ddd;
+}
+
+table td {
+            width: 11.11%;
+            min-width: 3em;
+            height: 2.5em;
+            text-align: center;
+            vertical-align: middle;
+}
+
+.textfield {
+               width: 100%;
+               height: 100%;
+               border: #000000 solid 5px;   
+}
+
+/*
+button {
+            width: 100%;
+            height: 100%;
+            background: transparent;
+            border: none;
+            font-size: 100%;
+            border: #000000 solid 1px;
+}
+*/
+
+#summary{
+    display: none;
+}
+
+button:hover {
+                background-color: darkgrey;
+}
+
+ol {
+     list-style-type: none;
+}
+
+.div2 {
+          width: 400px;
+          height: 400px;  
+          padding: 50px;
+          border: 2px solid black;
+          margin-left: auto;
+          margin-right: auto;
+          color: black;
+          /*float: right;*/
+          display: block;
+          text-align: center;
+          background-color: lightgrey;         
+}
+
+
+
+
+
+
+/*for payment */
+
+.row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  margin: 0 -16px;
+}
+
+.col-25 {
+  -ms-flex: 25%; /* IE10 */
+  flex: 25%;
+}
+
+.col-50 {
+  -ms-flex: 33%; /* IE10 */
+  flex: 33%;
+}
+
+.col-75 {
+  -ms-flex: 75%; /* IE10 */
+  flex: 75%;
+}
+
+.col-25,
+.col-50,
+.col-75 {
+  padding: 0 16px;
+}
+
+.container {
+  background-color: #f2f2f2;
+  padding: 5px 20px 15px 20px;
+  border: 1px solid lightgrey;
+  border-radius: 3px;
+}
+
+#cTime{
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+.pay {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+label {
+  margin-bottom: 10px;
+  display: block;
+}
+
+.icon-container {
+  margin-bottom: 20px;
+  padding: 7px 0;
+  font-size: 24px;
+}
+
+.btn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px;
+  margin: 10px 0;
+  border: none;
+  width: 100%;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 17px;
+}
+
+.btn:hover {
+  background-color: #45a049;
+}
+
+a {
+  color: #2196F3;
+}
+
+hr {
+  border: 1px solid lightgrey;
+}
+
+span.price {
+  float: right;
+  color: grey;
+}
+
+
